@@ -5,7 +5,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px 200px 50px 100px 140px 20px 400px;
+    grid-template-rows: 50px 50px 200px 50px 25px 400px 25px 140px 20px 400px;
     /* grid-gap: 10px; */
 }
 img{
@@ -37,23 +37,57 @@ h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
+    margin: 0;
 }
 h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
+
 }
 h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 15px;
+
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.para1{
+    grid-column: 2 / span 10;
+    grid-row: 6 / span 1;
+    color: #161C26;
+}
+#orange{
+    color: #F29D35;
+}
+.imgBreak1{
+    grid-column: 1 / span 12;
+    grid-row: 8 / span 1;
+}
+.goodBadIMG{
+    grid-column: 2 / span 4;
+    grid-row: 9 / span 1;
+}
+.goodBadContent{
+    grid-column: 6 / span 6;
+    grid-row: 9 / span 1;
+    background-color: #161C26;
+}
+.words{
+    color: #F2F2F2;
+    margin: 25px 25px 30px 25px;
 }
 @media (min-width: 780px) {
-    body{
-        background-color: aquamarine;
-    }
     .container{
-        grid-template-rows: 100px 120px 300px 120px 100px 140px 20px 400px;
+        grid-template-rows: 100px 120px 300px 100px 100px 400px 150px 400px 150px;
     }
     h1{
         font-size: 40px;
@@ -63,5 +97,22 @@ h3{
     }
     h3{
         font-size: 25px;
+    }
+    .para1{
+        grid-column: 2 / span 4;
+        grid-row: 6 / span 1;
+    }
+    .imgBreak1{
+        grid-column: 8 / span 4;
+        grid-row: 6 / span 1;
+    }
+    .goodBadIMG{
+        grid-column: 2 / span 4;
+        grid-row: 8 / span 1;
+    }
+    .goodBadContent{
+        grid-column: 6 / span 6;
+        grid-row: 8 / span 1;
+        background-color: #161C26;
     }
 }
