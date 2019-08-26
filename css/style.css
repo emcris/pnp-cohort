@@ -5,7 +5,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px 250px 50px 25px 1fr 300px 400px 25px 200px 875px 50px 20px 300px 20px 750px 20px 50px 300px 50px 50px;
+    grid-template-rows: 50px 50px 250px 50px 25px 1fr 300px 400px 25px 200px 875px 50px 20px 300px 20px 750px 20px 50px 300px 50px 50px 300px;
     grid-gap: 0px;
 }
 img{
@@ -177,9 +177,31 @@ a:active .switch{
     padding: 20px;
     color: #F2F2F2
 }
-@media (min-width: 700px) {
+footer{
+    grid-column: 1 / span 12;
+    grid-row: 22 / span 1;
+    background-color: #161C26;
+    color: #F2F2F2;
+    padding: 20px;
+}
+.noMargin{
+    margin: 0;
+}
+@media (min-width: 768px) and (max-width:1023px){
     .container{
-        grid-template-rows: 100px 120px 300px 100px 100px 1fr 1fr 150px 500px 150px 400px 150px 50px 50px 300px 50px 50px; 
+    grid-template-rows: 50px 50px 250px 50px 25px 1fr 300px 250px 25px 200px 500px 50px 20px 300px 20px 400px 20px 50px 300px 50px 50px 300px;
+    }
+    .desingLaw{
+        grid-column: 7 /span 5;
+    }
+    .designPractice{
+        grid-row: 13 / span 3;
+        grid-column: 2 / span 5;
+    }
+}
+@media (min-width: 1024px) {
+    .container{
+        grid-template-rows: 100px 120px 300px 100px 100px 1fr 1fr 150px 500px 150px 400px 150px 50px 50px 300px 50px 50px 300px; 
         grid-gap: 0px;
     }
     .t5{
@@ -242,5 +264,8 @@ a:active .switch{
     .coverHead{
         grid-column: 3 / span 8;
         grid-row: 15/ span 1;
+    }
+    footer{
+        grid-row:18 / span 1;
     }
 }
