@@ -120,6 +120,9 @@ p{
     border: solid 3px #F2F2F2;
     border-radius: 40pt;
 }
+#white{
+    color: #F2F2F2;
+}
 a:link{
 text-decoration: none;
 }
