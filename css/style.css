@@ -5,7 +5,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px 200px 50px 25px 400px 25px 140px 20px 400px;
+    grid-template-rows: 50px 50px 200px 50px 25px 1fr 25px 100px 50px 100px 1fr 100px;
     /* grid-gap: 10px; */
 }
 img{
@@ -73,21 +73,21 @@ p{
     grid-row: 8 / span 1;
 }
 .goodBadIMG{
-    grid-column: 2 / span 4;
-    grid-row: 9 / span 1;
+    grid-column: 2 / span 10;
+    grid-row: 10 / span 1;
 }
 .goodBadContent{
-    grid-column: 6 / span 6;
-    grid-row: 9 / span 1;
+    grid-column: 2 / span 10;
+    grid-row: 11 / span 1;
     background-color: #161C26;
 }
 .words{
     color: #F2F2F2;
     margin: 25px 25px 30px 25px;
 }
-@media (min-width: 780px) {
+@media (min-width: 700px) {
     .container{
-        grid-template-rows: 100px 120px 300px 100px 100px 400px 150px 400px 150px;
+        grid-template-rows: 100px 120px 300px 100px 100px 1fr 150px 400px 150px;
     }
     h1{
         font-size: 40px;
@@ -105,6 +105,7 @@ p{
     .imgBreak1{
         grid-column: 8 / span 4;
         grid-row: 6 / span 1;
+        
     }
     .goodBadIMG{
         grid-column: 2 / span 4;
